@@ -235,6 +235,6 @@ public class ReqresTest {
                 .then()
                 .log().all()
                 .statusCode(200)
-                //.body(hasItems(new File(LIST_OF_USERS_RESPONSE)));
+                .body(hasItems(new File(LIST_OF_USERS_RESPONSE)));
     }
 }
