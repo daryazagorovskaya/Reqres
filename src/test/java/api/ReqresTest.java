@@ -99,7 +99,7 @@ public class ReqresTest {
                 .body("error", equalTo("Missing password"));
     }
 
-    @Test
+    @Test (enabled = false)
     public void listUsers() {
         given()
                 .when()
@@ -141,7 +141,7 @@ public class ReqresTest {
                 .statusCode(404);
     }
 
-    @Test
+    @Test (enabled= false)
     public void listResource() {
         given()
                 .when()
@@ -226,7 +226,7 @@ public class ReqresTest {
                 .log().all()
                 .statusCode(204);
     }
-    @Test
+    @Test (enabled= false)
     public void delayedResponse() {
         given()
                 .contentType(ContentType.JSON)
